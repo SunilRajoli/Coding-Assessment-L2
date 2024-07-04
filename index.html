@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-images">
+            <img id="main-image" src="./assets/image1.png" alt="Product Image">
+            <div class="thumbnails">
+                <img src="./assets/image2.png" alt="Thumbnail 1">
+                <img src="./assets/image3.png" alt="Thumbnail 2">
+                <img src="./assets/image4.png" alt="Thumbnail 3">
+                <img src="./assets/image5.png" alt="Thumbnail 4">
+            </div>
+        </div>
+        <div class="product-details">
+            <div class="vendor">Marmeto</div>
+            <div class="title">Embrace Sideboard</div>
+            <hr>
+            <div class="pricing">
+                <div class="price-list">
+                    <span id="price">$12999.00</span>
+                    <span id="compare-price">$19999.00</span>
+                </div>
+                <span id="percentage-off">35% Off</span>
+            </div>
+            <hr>
+            <div class="selectors">
+                <div class="color-selector">
+                    <label>Choose a Color</label>
+                    <div class="color-options">
+                        <input type="radio" id="color-beige" name="color" value="Beige" checked>
+                        <label for="color-beige" class="color-option" style="background: #ECDECC;">
+                            <span class="tick-mark">✓</span>
+                        </label>
+                        <input type="radio" id="color-green" name="color" value="Green">
+                        <label for="color-green" class="color-option" style="background: #BBD278;">
+                            <span class="tick-mark">✓</span>
+                        </label>
+                        <input type="radio" id="color-blue" name="color" value="Blue">
+                        <label for="color-blue" class="color-option" style="background: #BBC1F8;">
+                            <span class="tick-mark">✓</span>
+                        </label>
+                        <input type="radio" id="color-pink" name="color" value="Pink">
+                        <label for="color-pink" class="color-option" style="background: #FFD3F8;">
+                            <span class="tick-mark">✓</span>
+                        </label>
+                    </div>
+                </div>
+                <hr>
+                <div class="size-selector">
+                    <label>Choose a Size</label>
+                    <div class="size-options">
+                        <input type="radio" id="size-small" name="size" value="Small" checked>
+                        <label for="size-small" class="size-option">
+                            <span class="size-indicator"></span>
+                            Small
+                        </label>
+                        <input type="radio" id="size-medium" name="size" value="Medium">
+                        <label for="size-medium" class="size-option">
+                            <span class="size-indicator"></span>
+                            Medium
+                        </label>
+                        <input type="radio" id="size-large" name="size" value="Large">
+                        <label for="size-large" class="size-option">
+                            <span class="size-indicator"></span>
+                            Large
+                        </label>
+                        <input type="radio" id="size-xl" name="size" value="Extra Large">
+                        <label for="size-xl" class="size-option">
+                            <span class="size-indicator"></span>
+                            Extra Large
+                        </label>
+                        <input type="radio" id="size-xxl" name="size" value="XXL">
+                        <label for="size-xxl" class="size-option">
+                            <span class="size-indicator"></span>
+                            XXL
+                        </label>
+                    </div>
+                </div>
+                <div class="quantity-and-cart">
+                    <div class="quantity-selector">
+                        <label>Quantity</label>
+                        <div class="quantity-options">
+                            <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+                            <input type="number" id="quantity" value="1" min="1">
+                            <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+                        </div>
+                    </div>
+                    <button id="add-to-cart" onclick="addToCart()"><i class="fas fa-shopping-bag"></i>Add to Cart</button>
+                </div>
+            </div>
+            <div id="cart-message" class="hidden"></div>
+            <hr>
+            <div class="description">
+                <p>The Embrace Sideboard is a stylish wear. With a top cloth designed to provide superior protection and look great, this storage solution is both functional and attractive. It fits seamlessly into any home decor, with clean lines and a timeless look. Crafted from premium materials for a combination of style, durability, and reliability.</p>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
