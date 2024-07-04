@@ -22,7 +22,7 @@ body {
 
 .product-images img {
     width: 100%;
-    height: auto;
+    height: 620px;
     max-width: 570px;
     border-radius: 10px;
     border: 1px solid #ccc;
